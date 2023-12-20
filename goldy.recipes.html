@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="🌱 Recipes" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://goldybot.devgoldy.xyz/goldy.recipes.html" />
+<meta property="og:site_name" content="Goldy Bot V5" />
+<meta property="og:description" content="🎴 Select Menus: 🔘 Buttons: 🧾 Recipe:" />
+<meta property="og:image" content="https://goldybot.devgoldy.xyz/_static/logo.png" />
+<meta property="og:image:alt" content="Goldy Bot V5" />
+<meta name="description" content="🎴 Select Menus: 🔘 Buttons: 🧾 Recipe:" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="⚙ Utils" href="utils.html" /><link rel="prev" title="📦 Objects" href="goldy.objects.html" />
+
+    <link rel="shortcut icon" href="_static/logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>🌱 Recipes - Goldy Bot V5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: orange;
+  --color-brand-content: #c95f12;
+  --color-admonition-background: #ffe7ae;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Goldy Bot V5  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Goldy Bot V5  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="api_documentation.html">📘 API Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 📘 API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cli.html">📀CLI</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="goldy.html">🧡 Goldy Core</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 🧡 Goldy Core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="goldy.commands.html">💽Commands</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.database.html">📅Database</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 📅Database</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.databases.html">🎪Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.wrappers.html">🎁Database Wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.extensions.html">➕Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.guilds.html">🏨Guilds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.live_console.html">🖥 Live Console</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.nextcore_utils.html">⚡ Nextcore utils</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of ⚡ Nextcore utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.guilds.html">🏰 Guilds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.embeds.html">🌈 Embeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.messages.html">💬 Messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.channels.html">👁‍🗨 Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.slash_options.html">🎰 Slash Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.objects.html">📦 Objects</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">🌱 Recipes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">⚙ Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples.html">🗒️ Examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 🗒️ Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.buttons.html">🔘 Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.reply.html">💬 Reply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.slash_options.html">🎰 Slash Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.sub_commands.html">🪜 Sub Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.database_wrapper.html">🎁 Database Wrappers</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="recipes">
+<h1>🌱 Recipes<a class="headerlink" href="#recipes" title="Link to this heading">#</a></h1>
+<section id="module-GoldyBot.goldy.recipes.select_menu">
+<span id="select-menus"></span><h2>🎴 Select Menus<a class="headerlink" href="#module-GoldyBot.goldy.recipes.select_menu" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SELECT_MENU_SINGLE_VALUE_CALLBACK</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">SelectMenuTypes.STRING</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">SelectMenuTypes.STRING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuChoice" title="GoldyBot.goldy.recipes.select_menu.SelectMenuChoice"><span class="pre">SelectMenuChoice</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholder_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">callback_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/select_menu.html#SelectMenu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenu" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SELECT_MENU_SINGLE_VALUE_CALLBACK</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">SelectMenuTypes.USER</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.ROLE</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.MENTIONABLE</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.CHANNEL</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">SelectMenuTypes.STRING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholder_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">callback_args</span></span></em><span class="sig-paren">)</span></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SELECT_MENU_MULTIPLE_VALUES_CALLBACK</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">SelectMenuTypes.STRING</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">SelectMenuTypes.STRING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuChoice" title="GoldyBot.goldy.recipes.select_menu.SelectMenuChoice"><span class="pre">SelectMenuChoice</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholder_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">callback_args</span></span></em><span class="sig-paren">)</span></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SELECT_MENU_MULTIPLE_VALUES_CALLBACK</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">SelectMenuTypes.USER</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.ROLE</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.MENTIONABLE</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SelectMenuTypes.CHANNEL</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">SelectMenuTypes.STRING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholder_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">callback_args</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe" title="GoldyBot.goldy.recipes.Recipe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Recipe</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenu.invoke">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">invoke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">platter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter" title="GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter"><span class="pre">GoldPlatter</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/select_menu.html#SelectMenu.invoke"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenu.invoke" title="Link to this definition">#</a></dt>
+<dd><p>Runs/triggers this recipe. This method is usually used internally.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuChoice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenuChoice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">extra</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/select_menu.html#SelectMenuChoice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuChoice" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>A class used to create select menu choices.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.select_menu.</span></span><span class="sig-name descname"><span class="pre">SelectMenuTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/select_menu.html#SelectMenuTypes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enum class containing all the select menu types.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.CHANNEL">
+<span class="sig-name descname"><span class="pre">CHANNEL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.CHANNEL" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.MENTIONABLE">
+<span class="sig-name descname"><span class="pre">MENTIONABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.MENTIONABLE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.ROLE">
+<span class="sig-name descname"><span class="pre">ROLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.ROLE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.STRING">
+<span class="sig-name descname"><span class="pre">STRING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.STRING" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.USER">
+<span class="sig-name descname"><span class="pre">USER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.USER" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.recipes.button">
+<span id="buttons"></span><h2>🔘 Buttons<a class="headerlink" href="#module-GoldyBot.goldy.recipes.button" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.Button">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.button.</span></span><span class="sig-name descname"><span class="pre">Button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle" title="GoldyBot.goldy.recipes.button.ButtonStyle"><span class="pre">ButtonStyle</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter" title="GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter"><span class="pre">GoldPlatter</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">callback_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/button.html#Button"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.button.Button" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.button.</span></span><span class="sig-name descname"><span class="pre">Button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">ButtonStyle.LINK</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emoji</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe" title="GoldyBot.goldy.recipes.Recipe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Recipe</span></code></a></p>
+<p>A class used to create a slash command button.</p>
+<hr class="docutils" />
+<section id="example">
+<h3>⭐ Example:<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<p>This is how you use a button in goldy bot:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@GoldyBot</span><span class="o">.</span><span class="n">command</span><span class="p">(</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Have you ever wanted to 💣nuke a city? WELL FUCK IT, NOW YOU CAN!&quot;</span><span class="p">,</span> 
+    <span class="n">slash_options</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="n">SlashOption</span><span class="p">(</span>
+            <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;The 🏢 city you would like to 💣nuke!&quot;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">nuke</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">platter</span><span class="p">:</span> <span class="n">GoldyBot</span><span class="o">.</span><span class="n">GoldPlatter</span><span class="p">,</span> <span class="n">city</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+
+    <span class="k">await</span> <span class="n">platter</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Are you sure you would like to nuke **</span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">**?&quot;</span><span class="p">,</span>
+        <span class="n">recipes</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">Button</span><span class="p">(</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">GREEN</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Yes&quot;</span><span class="p">,</span> <span class="n">callback</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nuke_city</span><span class="p">,</span> <span class="n">city</span> <span class="o">=</span> <span class="n">city</span><span class="p">),</span>
+            <span class="n">Button</span><span class="p">(</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;No&quot;</span><span class="p">,</span> <span class="n">callback</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;👨‍🦱 Alright we&#39;re holding off captain.&quot;</span><span class="p">))</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">nuke_city</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">platter</span><span class="p">:</span> <span class="n">GoldyBot</span><span class="o">.</span><span class="n">GoldPlatter</span><span class="p">,</span> <span class="n">city</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">casualties</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+    <span class="k">await</span> <span class="n">platter</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;&gt; 💣 You nuked </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">, there was </span><span class="si">{</span><span class="n">casualties</span><span class="si">}</span><span class="s2"> casualties.&quot;</span><span class="p">,</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.Button.invoke">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">invoke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">platter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter" title="GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter"><span class="pre">GoldPlatter</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/button.html#Button.invoke"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.button.Button.invoke" title="Link to this definition">#</a></dt>
+<dd><p>Runs/triggers this recipe. This method is usually used internally.</p>
+</dd></dl>
+
+</section>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.button.</span></span><span class="sig-name descname"><span class="pre">ButtonStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes/button.html#ButtonStyle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.BLURPLE">
+<span class="sig-name descname"><span class="pre">BLURPLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.BLURPLE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.DANGER">
+<span class="sig-name descname"><span class="pre">DANGER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.DANGER" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.GREEN">
+<span class="sig-name descname"><span class="pre">GREEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.GREEN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.GREY">
+<span class="sig-name descname"><span class="pre">GREY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.GREY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.LINK">
+<span class="sig-name descname"><span class="pre">LINK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.LINK" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.PRIMARY">
+<span class="sig-name descname"><span class="pre">PRIMARY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.PRIMARY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.RED">
+<span class="sig-name descname"><span class="pre">RED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.RED" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.SECONDARY">
+<span class="sig-name descname"><span class="pre">SECONDARY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.SECONDARY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.button.ButtonStyle.SUCCESS">
+<span class="sig-name descname"><span class="pre">SUCCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.button.ButtonStyle.SUCCESS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.recipes">
+<span id="recipe"></span><h2>🧾 Recipe<a class="headerlink" href="#module-GoldyBot.goldy.recipes" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.Recipe">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.recipes.</span></span><span class="sig-name descname"><span class="pre">Recipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ActionRowData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">NonLinkButtonComponentData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LinkButtonComponentData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">SelectMenuComponentData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">TextInputComponentData</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter" title="GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter"><span class="pre">GoldPlatter</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes.html#Recipe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.Recipe" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable" title="GoldyBot.goldy.objects.invokable.Invokable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Invokable</span></code></a></p>
+<p>A recipe is equivalent to an item or message component. This is inherited by all message components in Goldy Bot. This can be passed into a send_msg function.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.Recipe.callback">
+<span class="sig-name descname"><span class="pre">callback</span></span><a class="headerlink" href="#GoldyBot.goldy.recipes.Recipe.callback" title="Link to this definition">#</a></dt>
+<dd><p>The function to be executed on recipe interaction.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.Recipe.command_platter">
+<span class="sig-name descname"><span class="pre">command_platter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">objects.GoldPlatter</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.recipes.Recipe.command_platter" title="Link to this definition">#</a></dt>
+<dd><p>The platter object from the command that sent this recipe.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.recipes.Recipe.invoke">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">invoke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">platter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">objects.GoldPlatter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambda_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Awaitable</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/recipes.html#Recipe.invoke"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.recipes.Recipe.invoke" title="Link to this definition">#</a></dt>
+<dd><p>Runs/triggers this recipe. This method is usually used internally.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="utils.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">⚙ Utils</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="goldy.objects.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">📦 Objects</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Goldy
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">🌱 Recipes</a><ul>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.recipes.select_menu">🎴 Select Menus</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenu"><code class="docutils literal notranslate"><span class="pre">SelectMenu</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenu.invoke"><code class="docutils literal notranslate"><span class="pre">SelectMenu.invoke()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuChoice"><code class="docutils literal notranslate"><span class="pre">SelectMenuChoice</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.CHANNEL"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes.CHANNEL</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.MENTIONABLE"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes.MENTIONABLE</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.ROLE"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes.ROLE</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.STRING"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes.STRING</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.USER"><code class="docutils literal notranslate"><span class="pre">SelectMenuTypes.USER</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.recipes.button">🔘 Buttons</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.Button"><code class="docutils literal notranslate"><span class="pre">Button</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.Button.invoke"><code class="docutils literal notranslate"><span class="pre">Button.invoke()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle"><code class="docutils literal notranslate"><span class="pre">ButtonStyle</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.BLURPLE"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.BLURPLE</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.DANGER"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.DANGER</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.GREEN"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.GREEN</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.GREY"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.GREY</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.LINK"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.LINK</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.PRIMARY"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.PRIMARY</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.RED"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.RED</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.SECONDARY"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.SECONDARY</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.button.ButtonStyle.SUCCESS"><code class="docutils literal notranslate"><span class="pre">ButtonStyle.SUCCESS</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.recipes">🧾 Recipe</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe"><code class="docutils literal notranslate"><span class="pre">Recipe</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe.callback"><code class="docutils literal notranslate"><span class="pre">Recipe.callback</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe.command_platter"><code class="docutils literal notranslate"><span class="pre">Recipe.command_platter</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.recipes.Recipe.invoke"><code class="docutils literal notranslate"><span class="pre">Recipe.invoke()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    </body>
+</html>

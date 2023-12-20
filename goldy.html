@@ -1,0 +1,795 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="🧡 Goldy Core" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://goldybot.devgoldy.xyz/goldy.html" />
+<meta property="og:site_name" content="Goldy Bot V5" />
+<meta property="og:description" content="💽Commands, 📅Database, ➕Extensions, 🏨Guilds, 🖥 Live Console, ⚡ Nextcore utils, 📦 Objects, 🌱 Recipes. Goldy Core Class: Goldy Config: Presence: Token:" />
+<meta property="og:image" content="https://goldybot.devgoldy.xyz/_static/logo.png" />
+<meta property="og:image:alt" content="Goldy Bot V5" />
+<meta name="description" content="💽Commands, 📅Database, ➕Extensions, 🏨Guilds, 🖥 Live Console, ⚡ Nextcore utils, 📦 Objects, 🌱 Recipes. Goldy Core Class: Goldy Config: Presence: Token:" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="💽Commands" href="goldy.commands.html" /><link rel="prev" title="📀CLI" href="cli.html" />
+
+    <link rel="shortcut icon" href="_static/logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>🧡 Goldy Core - Goldy Bot V5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: orange;
+  --color-brand-content: #c95f12;
+  --color-admonition-background: #ffe7ae;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Goldy Bot V5  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Goldy Bot V5  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="api_documentation.html">📘 API Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 📘 API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cli.html">📀CLI</a></li>
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">🧡 Goldy Core</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 🧡 Goldy Core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="goldy.commands.html">💽Commands</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.database.html">📅Database</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 📅Database</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.databases.html">🎪Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.wrappers.html">🎁Database Wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.extensions.html">➕Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.guilds.html">🏨Guilds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.live_console.html">🖥 Live Console</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.nextcore_utils.html">⚡ Nextcore utils</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of ⚡ Nextcore utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.guilds.html">🏰 Guilds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.embeds.html">🌈 Embeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.messages.html">💬 Messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.channels.html">👁‍🗨 Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.slash_options.html">🎰 Slash Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.objects.html">📦 Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.recipes.html">🌱 Recipes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">⚙ Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples.html">🗒️ Examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 🗒️ Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.buttons.html">🔘 Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.reply.html">💬 Reply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.slash_options.html">🎰 Slash Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.sub_commands.html">🪜 Sub Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.database_wrapper.html">🎁 Database Wrappers</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="goldy-core">
+<h1>🧡 Goldy Core<a class="headerlink" href="#goldy-core" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="goldy.commands.html">💽Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.database.html">📅Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.extensions.html">➕Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.guilds.html">🏨Guilds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.live_console.html">🖥 Live Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.nextcore_utils.html">⚡ Nextcore utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.objects.html">📦 Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goldy.recipes.html">🌱 Recipes</a></li>
+</ul>
+</div>
+<section id="module-GoldyBot.goldy">
+<span id="goldy-core-class"></span><h2>Goldy Core Class<a class="headerlink" href="#module-GoldyBot.goldy" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.</span></span><span class="sig-name descname"><span class="pre">Goldy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.token.Token" title="GoldyBot.goldy.token.Token"><span class="pre">Token</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_extension_loader_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_copyright</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The main Goldy Bot class that controls the whole framework and let’s you start an instance of Goldy Bot. Also known as the core.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.bot_user">
+<span class="sig-name descname"><span class="pre">bot_user</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">objects.Member</span></em><a class="headerlink" href="#GoldyBot.goldy.Goldy.bot_user" title="Link to this definition">#</a></dt>
+<dd><p>The bot’s user/member object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.command_listener">
+<span class="sig-name descname"><span class="pre">command_listener</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.command_listener" title="Link to this definition">#</a></dt>
+<dd><p>Class that handles the invoking of commands.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.command_loader">
+<span class="sig-name descname"><span class="pre">command_loader</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.command_loader" title="Link to this definition">#</a></dt>
+<dd><p>Class that handles command loading.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.config">
+<span class="sig-name descname"><span class="pre">config</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.config" title="Link to this definition">#</a></dt>
+<dd><p>Class that allows you to retrieve configuration data from the <code class="docutils literal notranslate"><span class="pre">goldy.json</span></code> config file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.database">
+<span class="sig-name descname"><span class="pre">database</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.database" title="Link to this definition">#</a></dt>
+<dd><p>Goldy Bot’s class to interface with a Mongo Database asynchronously.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.extension_loader">
+<span class="sig-name descname"><span class="pre">extension_loader</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.extension_loader" title="Link to this definition">#</a></dt>
+<dd><p>Class that handles extension loading and reloading.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.http_client">
+<span class="sig-name descname"><span class="pre">http_client</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.http_client" title="Link to this definition">#</a></dt>
+<dd><p>Nextcore http client, use this if you would like to perform low level requests.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.invokables">
+<span class="sig-name descname"><span class="pre">invokables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">INVOKABLE_TYPES</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.Goldy.invokables" title="Link to this definition">#</a></dt>
+<dd><p>List of all commands, buttons and events registered.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.latency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">latency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.Goldy.latency" title="Link to this definition">#</a></dt>
+<dd><p>Returns the latency in milliseconds between discord and goldy bot. <code class="docutils literal notranslate"><span class="pre">Goldy</span> <span class="pre">-&gt;</span> <span class="pre">Discord</span> <span class="pre">-&gt;</span> <span class="pre">Goldy</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.live_console">
+<span class="sig-name descname"><span class="pre">live_console</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.live_console" title="Link to this definition">#</a></dt>
+<dd><p>The goldy bot live console.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.permission_system">
+<span class="sig-name descname"><span class="pre">permission_system</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.permission_system" title="Link to this definition">#</a></dt>
+<dd><p>A goldy bot class that contains methods to handle member/command permissions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.pre_setup">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy.pre_setup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy.pre_setup" title="Link to this definition">#</a></dt>
+<dd><p>Method ran before actual setup. This is used to fetch some data from discord needed by goldy when running the actual setup.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.presence">
+<span class="sig-name descname"><span class="pre">presence</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.presence" title="Link to this definition">#</a></dt>
+<dd><p>Class that allows you to control the status, game activity and more of Goldy Bot</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.setup">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy.setup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy.setup" title="Link to this definition">#</a></dt>
+<dd><p>Method ran to set up goldy bot.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.shard_manager">
+<span class="sig-name descname"><span class="pre">shard_manager</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.shard_manager" title="Link to this definition">#</a></dt>
+<dd><p>Nextcore shard manager, use if you would like to take control of the shards.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy.start"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy.start" title="Link to this definition">#</a></dt>
+<dd><p>🧡🌆 Awakens Goldy Bot from her hibernation. 😴 Shortcut to <code class="docutils literal notranslate"><span class="pre">asyncio.run(goldy.__start_async())</span></code> and also handles various exceptions carefully.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.start_up_time">
+<span class="sig-name descname"><span class="pre">start_up_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.Goldy.start_up_time" title="Link to this definition">#</a></dt>
+<dd><p>The datetime object of when the framework was booted up. Is None if the <code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code> method isn’t ran.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Unknown</span> <span class="pre">Reason'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy.stop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy.stop" title="Link to this definition">#</a></dt>
+<dd><p>Shuts down goldy bot right away and safely incase anything sussy wussy is going on. 😳</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.stop_async">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stop_async</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Unknown</span> <span class="pre">Reason'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy.html#Goldy.stop_async"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.Goldy.stop_async" title="Link to this definition">#</a></dt>
+<dd><p>Shuts down goldy bot asynchronously.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.system">
+<span class="sig-name descname"><span class="pre">system</span></span><a class="headerlink" href="#GoldyBot.goldy.Goldy.system" title="Link to this definition">#</a></dt>
+<dd><p>Goldy Bot class used to check how much resources Goldy is utilizing on the host system.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.Goldy.up_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">up_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.Goldy.up_time" title="Link to this definition">#</a></dt>
+<dd><p>Returns a datetime object of goldy bot’s uptime. Returns None if goldy bot was not started else it will ALWAYS return a datetime object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GoldyBot.goldy.get_core">
+<span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.</span></span><span class="sig-name descname"><span class="pre">get_core</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#GoldyBot.goldy.Goldy" title="GoldyBot.goldy.Goldy"><span class="pre">Goldy</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#GoldyBot.goldy.get_core" title="Link to this definition">#</a></dt>
+<dd><p>Returns instance of goldy core class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GoldyBot.goldy.get_goldy">
+<span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.</span></span><span class="sig-name descname"><span class="pre">get_goldy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#GoldyBot.goldy.Goldy" title="GoldyBot.goldy.Goldy"><span class="pre">Goldy</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#GoldyBot.goldy.get_goldy" title="Link to this definition">#</a></dt>
+<dd><p>Returns instance of goldy core class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GoldyBot.goldy.get_goldy_instance">
+<span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.</span></span><span class="sig-name descname"><span class="pre">get_goldy_instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#GoldyBot.goldy.Goldy" title="GoldyBot.goldy.Goldy"><span class="pre">Goldy</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy.html#get_goldy_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.get_goldy_instance" title="Link to this definition">#</a></dt>
+<dd><p>Returns instance of goldy core class.</p>
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.goldy_config">
+<span id="goldy-config"></span><h2>Goldy Config<a class="headerlink" href="#module-GoldyBot.goldy.goldy_config" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.goldy_config.</span></span><span class="sig-name descname"><span class="pre">GoldyConfig</span></span><a class="reference internal" href="_modules/GoldyBot/goldy/goldy_config.html#GoldyConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="api_documentation.html#GoldyBot.config.Config" title="GoldyBot.config.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a></p>
+<p>Class that allows you to retrieve configuration data from the <code class="docutils literal notranslate"><span class="pre">goldy.json</span></code> config file.</p>
+<p>All properties return None when not found in the config.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.allowed_guilds">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">allowed_guilds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.allowed_guilds" title="Link to this definition">#</a></dt>
+<dd><p>Returns list of tuples including <code class="docutils literal notranslate"><span class="pre">guild</span> <span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">guild</span> <span class="pre">code</span> <span class="pre">name</span></code> that are allowed to operate in goldy bot.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.bot_dev">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bot_dev</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.bot_dev" title="Link to this definition">#</a></dt>
+<dd><p>The discord id of the bot developer. If none this will default to me (<a class="reference external" href="https://github.com/THEGOLDENPRO">https://github.com/THEGOLDENPRO</a>).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.branding_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">branding_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.branding_name" title="Link to this definition">#</a></dt>
+<dd><p>Returns branding display name like -&gt; 💛 Goldy Bot</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.extension_folder_location">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extension_folder_location</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.extension_folder_location" title="Link to this definition">#</a></dt>
+<dd><p>Returns location set for the extension folder in <code class="docutils literal notranslate"><span class="pre">goldy.json</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.extension_repos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extension_repos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.extension_repos" title="Link to this definition">#</a></dt>
+<dd><p>Returns the repositories goldy bot should pull from.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.ignored_extensions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ignored_extensions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.ignored_extensions" title="Link to this definition">#</a></dt>
+<dd><p>Returns code name of all ignored extensions from <code class="docutils literal notranslate"><span class="pre">goldy.json</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.included_extensions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">included_extensions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.included_extensions" title="Link to this definition">#</a></dt>
+<dd><p>Returns the extensions that were set to be included by the configuration.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.late_load_extensions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">late_load_extensions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.late_load_extensions" title="Link to this definition">#</a></dt>
+<dd><p>Returns code name of all late load extensions from <code class="docutils literal notranslate"><span class="pre">goldy.json</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.goldy_config.GoldyConfig.raise_on_extension_loader_error">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raise_on_extension_loader_error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#GoldyBot.goldy.goldy_config.GoldyConfig.raise_on_extension_loader_error" title="Link to this definition">#</a></dt>
+<dd><p>Returns whether the extension loader should raise on load errors stopping the entire framework or not.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.presence">
+<span id="presence"></span><h2>Presence<a class="headerlink" href="#module-GoldyBot.goldy.presence" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Activity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.presence.</span></span><span class="sig-name descname"><span class="pre">Activity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes" title="GoldyBot.goldy.presence.ActivityTypes"><span class="pre">ActivityTypes</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/presence.html#Activity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.presence.Activity" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Goldy bot discord activity.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Activity.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Activity.name" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Activity.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes" title="GoldyBot.goldy.presence.ActivityTypes"><span class="pre">ActivityTypes</span></a></em><a class="headerlink" href="#GoldyBot.goldy.presence.Activity.type" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Activity.url">
+<span class="sig-name descname"><span class="pre">url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Activity.url" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.ActivityTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.presence.</span></span><span class="sig-name descname"><span class="pre">ActivityTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/presence.html#ActivityTypes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.presence.ActivityTypes" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Goldy Bot enum class of different discord activity types.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.ActivityTypes.LISTENING_TO">
+<span class="sig-name descname"><span class="pre">LISTENING_TO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.ActivityTypes.LISTENING_TO" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.ActivityTypes.LIVE_ON_TWITCH">
+<span class="sig-name descname"><span class="pre">LIVE_ON_TWITCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.ActivityTypes.LIVE_ON_TWITCH" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.ActivityTypes.PLAYING_GAME">
+<span class="sig-name descname"><span class="pre">PLAYING_GAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.ActivityTypes.PLAYING_GAME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.ActivityTypes.WATCHING">
+<span class="sig-name descname"><span class="pre">WATCHING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.ActivityTypes.WATCHING" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Presence">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.presence.</span></span><span class="sig-name descname"><span class="pre">Presence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">goldy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.Goldy" title="GoldyBot.goldy.Goldy"><span class="pre">Goldy</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/presence.html#Presence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.presence.Presence" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that allows you to control the status, game activity and more of Goldy Bot</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Presence.change">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">change</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.presence.Status" title="GoldyBot.goldy.presence.Status"><span class="pre">Status</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#GoldyBot.goldy.presence.Activity" title="GoldyBot.goldy.presence.Activity"><span class="pre">Activity</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">afk</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/presence.html#Presence.change"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.presence.Presence.change" title="Link to this definition">#</a></dt>
+<dd><p>Updates the presence of Goldy Bot. Like e.g <code class="docutils literal notranslate"><span class="pre">online,</span> <span class="pre">idle,</span> <span class="pre">dnd</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.presence.</span></span><span class="sig-name descname"><span class="pre">Status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/presence.html#Status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.presence.Status" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Goldy Bot enum class of discord status.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.AWAY">
+<span class="sig-name descname"><span class="pre">AWAY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'idle'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.AWAY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.DND">
+<span class="sig-name descname"><span class="pre">DND</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dnd'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.DND" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.DO_NOT_DISTURB">
+<span class="sig-name descname"><span class="pre">DO_NOT_DISTURB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dnd'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.DO_NOT_DISTURB" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.IDLE">
+<span class="sig-name descname"><span class="pre">IDLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'idle'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.IDLE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.INVISIBLE">
+<span class="sig-name descname"><span class="pre">INVISIBLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'invisible'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.INVISIBLE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.presence.Status.ONLINE">
+<span class="sig-name descname"><span class="pre">ONLINE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'online'</span></em><a class="headerlink" href="#GoldyBot.goldy.presence.Status.ONLINE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.token">
+<span id="token"></span><h2>Token<a class="headerlink" href="#module-GoldyBot.goldy.token" title="Link to this heading">#</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.NoDatabaseToken">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.token.</span></span><span class="sig-name descname"><span class="pre">NoDatabaseToken</span></span><a class="reference internal" href="_modules/GoldyBot/goldy/token.html#NoDatabaseToken"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.token.NoDatabaseToken" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="api_documentation.html#GoldyBot.errors.GoldyBotError" title="GoldyBot.errors.GoldyBotError"><code class="xref py py-class docutils literal notranslate"><span class="pre">GoldyBotError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.NoDiscordToken">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.token.</span></span><span class="sig-name descname"><span class="pre">NoDiscordToken</span></span><a class="reference internal" href="_modules/GoldyBot/goldy/token.html#NoDiscordToken"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.token.NoDiscordToken" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="api_documentation.html#GoldyBot.errors.GoldyBotError" title="GoldyBot.errors.GoldyBotError"><code class="xref py py-class docutils literal notranslate"><span class="pre">GoldyBotError</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.Token">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.token.</span></span><span class="sig-name descname"><span class="pre">Token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">discord_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/token.html#Token"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.token.Token" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Handles grabbing the token in many various ways.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.Token.create_token_env_file">
+<span class="sig-name descname"><span class="pre">create_token_env_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/token.html#Token.create_token_env_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.token.Token.create_token_env_file" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.Token.database_url">
+<span class="sig-name descname"><span class="pre">database_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.token.Token.database_url" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.Token.discord_token">
+<span class="sig-name descname"><span class="pre">discord_token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.token.Token.discord_token" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.token.Token.get_token_from_env">
+<span class="sig-name descname"><span class="pre">get_token_from_env</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/token.html#Token.get_token_from_env"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.token.Token.get_token_from_env" title="Link to this definition">#</a></dt>
+<dd><p>Returns tuple of tokens from a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file.</p>
+<p>Tuple index order:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Discord</span> <span class="pre">Bot</span> <span class="pre">Token</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MongoDB</span> <span class="pre">Url</span></code></p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="goldy.commands.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">💽Commands</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="cli.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">📀CLI</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Goldy
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">🧡 Goldy Core</a><ul>
+<li><a class="reference internal" href="#module-GoldyBot.goldy">Goldy Core Class</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy"><code class="docutils literal notranslate"><span class="pre">Goldy</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.bot_user"><code class="docutils literal notranslate"><span class="pre">Goldy.bot_user</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.command_listener"><code class="docutils literal notranslate"><span class="pre">Goldy.command_listener</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.command_loader"><code class="docutils literal notranslate"><span class="pre">Goldy.command_loader</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.config"><code class="docutils literal notranslate"><span class="pre">Goldy.config</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.database"><code class="docutils literal notranslate"><span class="pre">Goldy.database</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.extension_loader"><code class="docutils literal notranslate"><span class="pre">Goldy.extension_loader</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.http_client"><code class="docutils literal notranslate"><span class="pre">Goldy.http_client</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.invokables"><code class="docutils literal notranslate"><span class="pre">Goldy.invokables</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.latency"><code class="docutils literal notranslate"><span class="pre">Goldy.latency</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.live_console"><code class="docutils literal notranslate"><span class="pre">Goldy.live_console</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.permission_system"><code class="docutils literal notranslate"><span class="pre">Goldy.permission_system</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.pre_setup"><code class="docutils literal notranslate"><span class="pre">Goldy.pre_setup()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.presence"><code class="docutils literal notranslate"><span class="pre">Goldy.presence</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.setup"><code class="docutils literal notranslate"><span class="pre">Goldy.setup()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.shard_manager"><code class="docutils literal notranslate"><span class="pre">Goldy.shard_manager</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.start"><code class="docutils literal notranslate"><span class="pre">Goldy.start()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.start_up_time"><code class="docutils literal notranslate"><span class="pre">Goldy.start_up_time</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.stop"><code class="docutils literal notranslate"><span class="pre">Goldy.stop()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.stop_async"><code class="docutils literal notranslate"><span class="pre">Goldy.stop_async()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.system"><code class="docutils literal notranslate"><span class="pre">Goldy.system</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.Goldy.up_time"><code class="docutils literal notranslate"><span class="pre">Goldy.up_time</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.get_core"><code class="docutils literal notranslate"><span class="pre">get_core()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.get_goldy"><code class="docutils literal notranslate"><span class="pre">get_goldy()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.get_goldy_instance"><code class="docutils literal notranslate"><span class="pre">get_goldy_instance()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.goldy_config">Goldy Config</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig"><code class="docutils literal notranslate"><span class="pre">GoldyConfig</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.allowed_guilds"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.allowed_guilds</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.bot_dev"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.bot_dev</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.branding_name"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.branding_name</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.extension_folder_location"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.extension_folder_location</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.extension_repos"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.extension_repos</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.ignored_extensions"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.ignored_extensions</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.included_extensions"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.included_extensions</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.late_load_extensions"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.late_load_extensions</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.goldy_config.GoldyConfig.raise_on_extension_loader_error"><code class="docutils literal notranslate"><span class="pre">GoldyConfig.raise_on_extension_loader_error</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.presence">Presence</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Activity"><code class="docutils literal notranslate"><span class="pre">Activity</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Activity.name"><code class="docutils literal notranslate"><span class="pre">Activity.name</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Activity.type"><code class="docutils literal notranslate"><span class="pre">Activity.type</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Activity.url"><code class="docutils literal notranslate"><span class="pre">Activity.url</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes"><code class="docutils literal notranslate"><span class="pre">ActivityTypes</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes.LISTENING_TO"><code class="docutils literal notranslate"><span class="pre">ActivityTypes.LISTENING_TO</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes.LIVE_ON_TWITCH"><code class="docutils literal notranslate"><span class="pre">ActivityTypes.LIVE_ON_TWITCH</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes.PLAYING_GAME"><code class="docutils literal notranslate"><span class="pre">ActivityTypes.PLAYING_GAME</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.ActivityTypes.WATCHING"><code class="docutils literal notranslate"><span class="pre">ActivityTypes.WATCHING</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Presence"><code class="docutils literal notranslate"><span class="pre">Presence</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Presence.change"><code class="docutils literal notranslate"><span class="pre">Presence.change()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status"><code class="docutils literal notranslate"><span class="pre">Status</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.AWAY"><code class="docutils literal notranslate"><span class="pre">Status.AWAY</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.DND"><code class="docutils literal notranslate"><span class="pre">Status.DND</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.DO_NOT_DISTURB"><code class="docutils literal notranslate"><span class="pre">Status.DO_NOT_DISTURB</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.IDLE"><code class="docutils literal notranslate"><span class="pre">Status.IDLE</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.INVISIBLE"><code class="docutils literal notranslate"><span class="pre">Status.INVISIBLE</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.presence.Status.ONLINE"><code class="docutils literal notranslate"><span class="pre">Status.ONLINE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.token">Token</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.NoDatabaseToken"><code class="docutils literal notranslate"><span class="pre">NoDatabaseToken</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.NoDiscordToken"><code class="docutils literal notranslate"><span class="pre">NoDiscordToken</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.Token"><code class="docutils literal notranslate"><span class="pre">Token</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.Token.create_token_env_file"><code class="docutils literal notranslate"><span class="pre">Token.create_token_env_file()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.Token.database_url"><code class="docutils literal notranslate"><span class="pre">Token.database_url</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.Token.discord_token"><code class="docutils literal notranslate"><span class="pre">Token.discord_token</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.token.Token.get_token_from_env"><code class="docutils literal notranslate"><span class="pre">Token.get_token_from_env()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    </body>
+</html>

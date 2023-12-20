@@ -1,0 +1,522 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="➕Extensions" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://goldybot.devgoldy.xyz/goldy.extensions.html" />
+<meta property="og:site_name" content="Goldy Bot V5" />
+<meta property="og:description" content="In goldy bot instead of cogs or whatever you may call them we have extensions.
+Extensions are…. well…. EXTENSIONS! They are modules that extend the goldy bot framework." />
+<meta property="og:image" content="https://goldybot.devgoldy.xyz/_static/logo.png" />
+<meta property="og:image:alt" content="Goldy Bot V5" />
+<meta name="description" content="⭐ How to create an Extension:: In goldy bot instead of cogs or whatever you may call them we have extensions. Extensions are…. well…. EXTENSIONS! They are modules that extend the goldy bot framewor..." />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="🏨Guilds" href="goldy.guilds.html" /><link rel="prev" title="🎁Database Wrappers" href="goldy.database.wrappers.html" />
+
+    <link rel="shortcut icon" href="_static/logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>➕Extensions - Goldy Bot V5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: orange;
+  --color-brand-content: #c95f12;
+  --color-admonition-background: #ffe7ae;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Goldy Bot V5  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Goldy Bot V5  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="api_documentation.html">📘 API Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 📘 API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cli.html">📀CLI</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="goldy.html">🧡 Goldy Core</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 🧡 Goldy Core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="goldy.commands.html">💽Commands</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.database.html">📅Database</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 📅Database</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.databases.html">🎪Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.wrappers.html">🎁Database Wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">➕Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.guilds.html">🏨Guilds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.live_console.html">🖥 Live Console</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.nextcore_utils.html">⚡ Nextcore utils</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of ⚡ Nextcore utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.guilds.html">🏰 Guilds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.embeds.html">🌈 Embeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.messages.html">💬 Messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.channels.html">👁‍🗨 Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.slash_options.html">🎰 Slash Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.objects.html">📦 Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.recipes.html">🌱 Recipes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">⚙ Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples.html">🗒️ Examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 🗒️ Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.buttons.html">🔘 Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.reply.html">💬 Reply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.slash_options.html">🎰 Slash Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.sub_commands.html">🪜 Sub Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.database_wrapper.html">🎁 Database Wrappers</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="extensions">
+<h1>➕Extensions<a class="headerlink" href="#extensions" title="Link to this heading">#</a></h1>
+<section id="how-to-create-an-extension">
+<h2>⭐ How to create an Extension:<a class="headerlink" href="#how-to-create-an-extension" title="Link to this heading">#</a></h2>
+<p>In goldy bot instead of cogs or whatever you may call them we have extensions.</p>
+<blockquote>
+<div><p>Extensions are…. well…. EXTENSIONS! They are modules that extend the goldy bot framework.
+You can create an extension for ANYTHING, a music bot, commands to lookup game stats and a lot more exciting commands. ☁ The skies your limit.</p>
+</div></blockquote>
+<p>Here are quick examples to get started with extensions in Goldy Bot V5. 🌟</p>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Python (Native)</label><div class="tab-content docutils">
+<p>This is GoldyBot v5 extension done natively within python. 😊</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">GoldyBot</span>
+
+<span class="k">class</span> <span class="nc">YourExtension</span><span class="p">(</span><span class="n">GoldyBot</span><span class="o">.</span><span class="n">Extension</span><span class="p">):</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+   <span class="nd">@GoldyBot</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+   <span class="k">async</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">platter</span><span class="p">:</span> <span class="n">GoldyBot</span><span class="o">.</span><span class="n">GoldPlatter</span><span class="p">):</span>
+      <span class="k">await</span> <span class="n">platter</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;👋hello&quot;</span><span class="p">,</span> <span class="n">reply</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">load</span><span class="p">():</span>
+   <span class="n">YourExtension</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Javascript API (Coming Soon…)</label><div class="tab-content docutils">
+<p>This is a GoldyBot v5 extension done within javascript using our <code class="docutils literal notranslate"><span class="pre">GBExtension.js</span></code> API that’s going to be coming soon. 😊</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span><span class="w"> </span><span class="nx">YourExtension</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">GoldyBot</span><span class="p">.</span><span class="nx">Extension</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">super</span><span class="p">();</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="k">async</span><span class="w"> </span><span class="nx">hello</span><span class="p">(</span><span class="nx">platter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">await</span><span class="w"> </span><span class="nx">platter</span><span class="p">.</span><span class="nx">send_message</span><span class="p">(</span><span class="s2">&quot;👋hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="s2">&quot;reply&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">      </span><span class="p">});</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourExtension</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Neat right 😁.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The javacript api is not written yet so the code in this example is subject to massively change. This is only a mockup.</p>
+</div>
+</section>
+<section id="module-GoldyBot.goldy.extensions">
+<span id="id1"></span><h2>Extensions<a class="headerlink" href="#module-GoldyBot.goldy.extensions" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.extensions.</span></span><span class="sig-name descname"><span class="pre">Extension</span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions.html#Extension"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The base class for a Goldy Bot extension.</p>
+<hr class="docutils" />
+<section id="example">
+<h3>⭐ Example:<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<p>This is how you set up an extension in a GoldyBot module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">YourExtension</span><span class="p">(</span><span class="n">GoldyBot</span><span class="o">.</span><span class="n">Extension</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="nd">@GoldyBot</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">platter</span><span class="p">:</span> <span class="n">GoldyBot</span><span class="o">.</span><span class="n">GoldPlatter</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">platter</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="s2">&quot;👋hello&quot;</span><span class="p">,</span> <span class="n">reply</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">load</span><span class="p">():</span>
+    <span class="n">YourExtension</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>More at our <a class="reference external" href="https://goldybot.devgoldy.xyz/goldy.extensions.html#how-to-create-an-extension">docs</a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.disable">
+<span class="sig-name descname"><span class="pre">disable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions.html#Extension.disable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.disable" title="Link to this definition">#</a></dt>
+<dd><p>A method to disable this extension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.enable">
+<span class="sig-name descname"><span class="pre">enable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions.html#Extension.enable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.enable" title="Link to this definition">#</a></dt>
+<dd><p>A method to enable this extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.is_disabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_disabled</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.is_disabled" title="Link to this definition">#</a></dt>
+<dd><p>Returns true/false whether the extension is disabled. An extension is considered disabled when all of it’s commands are also disabled.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.loaded_path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">loaded_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.loaded_path" title="Link to this definition">#</a></dt>
+<dd><p>The path where this extension was loaded.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.metadata">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">metadata</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ExtensionMetadata</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.metadata" title="Link to this definition">#</a></dt>
+<dd><p>Returns some metadata if available about this extension. Returns None if not available.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.name" title="Link to this definition">#</a></dt>
+<dd><p>Name of extension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.Extension.unload">
+<span class="sig-name descname"><span class="pre">unload</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions.html#Extension.unload"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.Extension.unload" title="Link to this definition">#</a></dt>
+<dd><p>Unloads and deletes itself from cache and all the commands with it. 
+You won’t be able to load the extension again without the load path.</p>
+</dd></dl>
+
+</section>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extensions_cache">
+<span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.extensions.</span></span><span class="sig-name descname"><span class="pre">extensions_cache</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension" title="GoldyBot.goldy.extensions.Extension"><span class="pre">Extension</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#GoldyBot.goldy.extensions.extensions_cache" title="Link to this definition">#</a></dt>
+<dd><p>This cache contains all the extensions that have been loaded and it’s memory location to the class.</p>
+</dd></dl>
+
+</section>
+<section id="module-GoldyBot.goldy.extensions.extension_loader">
+<span id="extension-loader"></span><h2>Extension Loader<a class="headerlink" href="#module-GoldyBot.goldy.extensions.extension_loader" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extension_loader.ExtensionLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GoldyBot.goldy.extensions.extension_loader.</span></span><span class="sig-name descname"><span class="pre">ExtensionLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">goldy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="goldy.html#GoldyBot.goldy.Goldy" title="GoldyBot.goldy.Goldy"><span class="pre">Goldy</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_load_error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions/extension_loader.html#ExtensionLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that handles extension loading and reloading.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions/extension_loader.html#ExtensionLoader.load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.load" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">extension_paths</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
+<dd><p>Loads each extension in this list of paths. If extension_paths is kept none, goldy bot will search for extensions to load itself.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.phrase_pyproject">
+<span class="sig-name descname"><span class="pre">phrase_pyproject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">extension_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ExtensionMetadata</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions/extension_loader.html#ExtensionLoader.phrase_pyproject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.phrase_pyproject" title="Link to this definition">#</a></dt>
+<dd><p>Phrases the pyproject.toml file in that extension path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.pull">
+<span class="sig-name descname"><span class="pre">pull</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions/extension_loader.html#ExtensionLoader.pull"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.pull" title="Link to this definition">#</a></dt>
+<dd><p>Pulls down the extensions that you specified from a repo into your extensions folder if they don’t already exist.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.reload">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reload</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/GoldyBot/goldy/extensions/extension_loader.html#ExtensionLoader.reload"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.reload" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">extensions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension" title="GoldyBot.goldy.extensions.Extension"><span class="pre">Extension</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
+<dd><p>Reloads each extension in this list. If extensions is kept none, goldy bot will reload all the extensions loaded itself.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="goldy.guilds.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">🏨Guilds</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="goldy.database.wrappers.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">🎁Database Wrappers</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Goldy
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">➕Extensions</a><ul>
+<li><a class="reference internal" href="#how-to-create-an-extension">⭐ How to create an Extension:</a></li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.extensions">Extensions</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension"><code class="docutils literal notranslate"><span class="pre">Extension</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.disable"><code class="docutils literal notranslate"><span class="pre">Extension.disable()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.enable"><code class="docutils literal notranslate"><span class="pre">Extension.enable()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.is_disabled"><code class="docutils literal notranslate"><span class="pre">Extension.is_disabled</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.loaded_path"><code class="docutils literal notranslate"><span class="pre">Extension.loaded_path</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.metadata"><code class="docutils literal notranslate"><span class="pre">Extension.metadata</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.name"><code class="docutils literal notranslate"><span class="pre">Extension.name</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.Extension.unload"><code class="docutils literal notranslate"><span class="pre">Extension.unload()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extensions_cache"><code class="docutils literal notranslate"><span class="pre">extensions_cache</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-GoldyBot.goldy.extensions.extension_loader">Extension Loader</a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader"><code class="docutils literal notranslate"><span class="pre">ExtensionLoader</span></code></a><ul>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.load"><code class="docutils literal notranslate"><span class="pre">ExtensionLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.phrase_pyproject"><code class="docutils literal notranslate"><span class="pre">ExtensionLoader.phrase_pyproject()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.pull"><code class="docutils literal notranslate"><span class="pre">ExtensionLoader.pull()</span></code></a></li>
+<li><a class="reference internal" href="#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.reload"><code class="docutils literal notranslate"><span class="pre">ExtensionLoader.reload()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    </body>
+</html>

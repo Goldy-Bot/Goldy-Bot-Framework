@@ -1,0 +1,1611 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <link rel="shortcut icon" href="_static/logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 --><title>Index - Goldy Bot V5 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: orange;
+  --color-brand-content: #c95f12;
+  --color-admonition-background: #ffe7ae;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: orange;
+  --color-brand-content: #ffdfae;
+  --color-admonition-background: #0d0904;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Goldy Bot V5  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Goldy Bot V5  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api_documentation.html">📘 API Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 📘 API Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="cli.html">📀CLI</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="goldy.html">🧡 Goldy Core</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 🧡 Goldy Core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="goldy.commands.html">💽Commands</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.database.html">📅Database</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 📅Database</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.databases.html">🎪Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.database.wrappers.html">🎁Database Wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.extensions.html">➕Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.guilds.html">🏨Guilds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.live_console.html">🖥 Live Console</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="goldy.nextcore_utils.html">⚡ Nextcore utils</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of ⚡ Nextcore utils</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.guilds.html">🏰 Guilds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.embeds.html">🌈 Embeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.messages.html">💬 Messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.channels.html">👁‍🗨 Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="goldy.nextcore_utils.slash_options.html">🎰 Slash Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.objects.html">📦 Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="goldy.recipes.html">🌱 Recipes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">⚙ Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples.html">🗒️ Examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 🗒️ Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.buttons.html">🔘 Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.reply.html">💬 Reply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.slash_options.html">🎰 Slash Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.sub_commands.html">🪜 Sub Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.database_wrapper.html">🎁 Database Wrappers</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#W"><strong>W</strong></a> | <a href="#Y"><strong>Y</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Activity">Activity (class in GoldyBot.goldy.presence)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.ActivityTypes">ActivityTypes (class in GoldyBot.goldy.presence)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.AKI_BLUE">AKI_BLUE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.AKI_ORANGE">AKI_ORANGE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.AKI_PINK">AKI_PINK (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.AKI_RED">AKI_RED (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.allowed_guilds">allowed_guilds (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.AllowedGuildsNotSpecified">AllowedGuildsNotSpecified</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.ASSETS">ASSETS (GoldyBot.paths.Paths attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes.ATTACHMENT">ATTACHMENT (GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes attribute)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.author">author (GoldyBot.goldy.objects.message.Message attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter.author">(GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter property)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.avatar_url">avatar_url (GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status.AWAY">AWAY (GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.BLACK">BLACK (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.BLUE">BLUE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.BLURPLE">BLURPLE (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.bot_dev">bot_dev (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.bot_user">bot_user (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="utils.html#GoldyBot.utils.human_datetime.HumanDatetimeOptions.BOTH">BOTH (GoldyBot.utils.human_datetime.HumanDatetimeOptions attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.branding_name">branding_name (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.BROWN">BROWN (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.Button">Button (class in GoldyBot.goldy.recipes.button)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle">ButtonStyle (class in GoldyBot.goldy.recipes.button)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="utils.html#GoldyBot.utils.cache.cache_lookup">cache_lookup() (in module GoldyBot.utils.cache)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.Recipe.callback">callback (GoldyBot.goldy.recipes.Recipe attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Presence.change">change() (GoldyBot.goldy.presence.Presence method)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel">Channel (class in GoldyBot.goldy.objects.channel)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes.CHANNEL">CHANNEL (GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.CHANNEL">(GoldyBot.goldy.recipes.select_menu.SelectMenuTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild.code_name">code_name (GoldyBot.goldy.guilds.guild.Guild attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours">Colours (class in GoldyBot.goldy.nextcore_utils.colours)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command">Command (class in GoldyBot.goldy.commands.command)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.decorator.command">command() (in module GoldyBot.goldy.commands.decorator)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.command_listener">command_listener (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.command_loader">command_loader (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.Recipe.command_platter">command_platter (GoldyBot.goldy.recipes.Recipe attribute)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.prefix_command.PrefixCommand.command_usage">command_usage (GoldyBot.goldy.commands.prefix_command.PrefixCommand property)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.CommandIsDisabled">CommandIsDisabled</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.listener.CommandListener">CommandListener (class in GoldyBot.goldy.commands.listener)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.loader.CommandLoader">CommandLoader (class in GoldyBot.goldy.commands.loader)</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.config.Config">Config (class in GoldyBot.config)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.config">config (GoldyBot.goldy.Goldy attribute)</a>
+
+        <ul>
+          <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild.config">(GoldyBot.goldy.guilds.guild.Guild property)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed.copy">copy() (GoldyBot.goldy.nextcore_utils.embeds.embed.Embed method)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.create_collection">create_collection() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.create_collection">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.Token.create_token_env_file">create_token_env_file() (GoldyBot.goldy.token.Token method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.DANGER">DANGER (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.data">data (GoldyBot.goldy.objects.channel.Channel attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.data">(GoldyBot.goldy.objects.message.Message attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database">Database (class in GoldyBot.goldy.database)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.database">database (GoldyBot.goldy.Goldy attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.database">(GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.Token.database_url">database_url (GoldyBot.goldy.token.Token attribute)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.DatabaseEnums">DatabaseEnums (class in GoldyBot.goldy.database)</a>
+</li>
+        <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.DatabaseWrapper">DatabaseWrapper (class in GoldyBot.goldy.database.wrappers)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils.human_datetime.HumanDatetimeOptions.DATE">DATE (GoldyBot.utils.human_datetime.HumanDatetimeOptions attribute)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils._async.delay">delay() (in module GoldyBot.utils._async)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.delete">delete() (GoldyBot.goldy.commands.command.Command method)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.delete">(GoldyBot.goldy.objects.channel.Channel method)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.delete">(GoldyBot.goldy.objects.message.Message method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.channels.html#GoldyBot.goldy.nextcore_utils.channels.delete_channel.delete_channel">delete_channel() (in module GoldyBot.goldy.nextcore_utils.channels.delete_channel)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.delete_collection">delete_collection() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.delete_collection">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.messages.html#GoldyBot.goldy.nextcore_utils.messages.delete_msg.delete_msg">delete_msg() (in module GoldyBot.goldy.nextcore_utils.messages.delete_msg)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.description">description (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.disable">disable() (GoldyBot.goldy.commands.command.Command method)</a>
+
+        <ul>
+          <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.disable">(GoldyBot.goldy.extensions.Extension method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.Token.discord_token">discord_token (GoldyBot.goldy.token.Token attribute)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.discriminator">discriminator (GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status.DND">DND (GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp.do_exit">do_exit() (GoldyBot.goldy.live_console.app.LiveConsoleApp method)</a>
+</li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild.do_extension_restrictions_pass">do_extension_restrictions_pass() (GoldyBot.goldy.guilds.guild.Guild method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status.DO_NOT_DISTURB">DO_NOT_DISTURB (GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp.do_quit">do_quit() (GoldyBot.goldy.live_console.app.LiveConsoleApp method)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp.do_reload">do_reload() (GoldyBot.goldy.live_console.app.LiveConsoleApp method)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp.do_reload_configs">do_reload_configs() (GoldyBot.goldy.live_console.app.LiveConsoleApp method)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp.do_stop">do_stop() (GoldyBot.goldy.live_console.app.LiveConsoleApp method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.edit">edit() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.edit">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed">Embed (class in GoldyBot.goldy.nextcore_utils.embeds.embed)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.EmbedAuthor">EmbedAuthor (class in GoldyBot.goldy.nextcore_utils.embeds.embed)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.EmbedField">EmbedField (class in GoldyBot.goldy.nextcore_utils.embeds.embed)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.EmbedFooter">EmbedFooter (class in GoldyBot.goldy.nextcore_utils.embeds.embed)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.EmbedImage">EmbedImage (class in GoldyBot.goldy.nextcore_utils.embeds.embed)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.enable">enable() (GoldyBot.goldy.commands.command.Command method)</a>
+
+        <ul>
+          <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.enable">(GoldyBot.goldy.extensions.Extension method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension">Extension (class in GoldyBot.goldy.extensions)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.extension">extension (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.extension_folder_location">extension_folder_location (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.extension_loader">extension_loader (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.extension_name">extension_name (GoldyBot.goldy.commands.command.Command attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.extension_repos">extension_repos (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader">ExtensionLoader (class in GoldyBot.goldy.extensions.extension_loader)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.ExtensionNotAllowedInGuild">ExtensionNotAllowedInGuild</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.ExtensionRestricted">ExtensionRestricted</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extensions_cache">extensions_cache (in module GoldyBot.goldy.extensions)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.find">find() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.find">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.find_all">find_all() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.find_all">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.find_one">find_one() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.find_one">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed.format_description">format_description() (GoldyBot.goldy.nextcore_utils.embeds.embed.Embed method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed.format_fields">format_fields() (GoldyBot.goldy.nextcore_utils.embeds.embed.Embed method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed.format_title">format_title() (GoldyBot.goldy.nextcore_utils.embeds.embed.Embed method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.from_image">from_image() (GoldyBot.goldy.nextcore_utils.colours.Colours class method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.from_rgb">from_rgb() (GoldyBot.goldy.nextcore_utils.colours.Colours class method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.FrontEndErrors">FrontEndErrors</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.func">func (GoldyBot.goldy.commands.command.Command attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.guilds.html#GoldyBot.goldy.nextcore_utils.guilds.get_channels.get_channels">get_channels() (in module GoldyBot.goldy.nextcore_utils.guilds.get_channels)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.get_collection">get_collection() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.get_collection">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.get_core">get_core() (in module GoldyBot.goldy)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils.human_datetime.get_datetime">get_datetime() (in module GoldyBot.utils.human_datetime)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.get_goldy">get_goldy() (in module GoldyBot.goldy)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.get_goldy_database">get_goldy_database() (GoldyBot.goldy.database.Database method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.get_goldy_instance">get_goldy_instance() (in module GoldyBot.goldy)</a>
+</li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.GuildManager.get_guild">get_guild() (GoldyBot.goldy.guilds.GuildManager method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.Token.get_token_from_env">get_token_from_env() (GoldyBot.goldy.token.Token method)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter">GoldPlatter (class in GoldyBot.goldy.objects.platter.golden_platter)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy">Goldy (class in GoldyBot.goldy)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.goldy">goldy (GoldyBot.goldy.objects.channel.Channel attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.goldy">(GoldyBot.goldy.objects.message.Message attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="api_documentation.html#GoldyBot.logging.goldy_bot_logger">goldy_bot_logger (in module GoldyBot.logging)</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.GOLDY_BOT_ROOT">GOLDY_BOT_ROOT (GoldyBot.paths.Paths attribute)</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.GOLDY_JSON_TEMPLATE">GOLDY_JSON_TEMPLATE (GoldyBot.paths.Paths attribute)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.DatabaseEnums.GOLDY_MAIN">GOLDY_MAIN (GoldyBot.goldy.database.DatabaseEnums attribute)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.DatabaseEnums.GOLDY_MEMBER_DATA">GOLDY_MEMBER_DATA (GoldyBot.goldy.database.DatabaseEnums attribute)</a>
+</li>
+        <li>
+    GoldyBot.cli
+
+        <ul>
+          <li><a href="cli.html#module-GoldyBot.cli">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.config
+
+        <ul>
+          <li><a href="api_documentation.html#module-GoldyBot.config">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.errors
+
+        <ul>
+          <li><a href="api_documentation.html#module-GoldyBot.errors">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy
+
+        <ul>
+          <li><a href="goldy.html#module-GoldyBot.goldy">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.command
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.command">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.decorator
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.decorator">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.group_command
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.group_command">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.listener
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.listener">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.loader
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.loader">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.prefix_command
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.prefix_command">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.commands.slash_command
+
+        <ul>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.slash_command">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.database
+
+        <ul>
+          <li><a href="goldy.database.html#module-GoldyBot.goldy.database">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.database.databases
+
+        <ul>
+          <li><a href="goldy.database.databases.html#module-GoldyBot.goldy.database.databases">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.database.wrappers
+
+        <ul>
+          <li><a href="goldy.database.wrappers.html#module-GoldyBot.goldy.database.wrappers">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.database.wrappers.member
+
+        <ul>
+          <li><a href="goldy.database.wrappers.html#module-GoldyBot.goldy.database.wrappers.member">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.extensions
+
+        <ul>
+          <li><a href="goldy.extensions.html#module-GoldyBot.goldy.extensions">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.extensions.extension_loader
+
+        <ul>
+          <li><a href="goldy.extensions.html#module-GoldyBot.goldy.extensions.extension_loader">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.goldy_config
+
+        <ul>
+          <li><a href="goldy.html#module-GoldyBot.goldy.goldy_config">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.guilds
+
+        <ul>
+          <li><a href="goldy.guilds.html#module-GoldyBot.goldy.guilds">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.guilds.guild
+
+        <ul>
+          <li><a href="goldy.guilds.html#module-GoldyBot.goldy.guilds.guild">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.live_console
+
+        <ul>
+          <li><a href="goldy.live_console.html#module-GoldyBot.goldy.live_console">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.live_console.app
+
+        <ul>
+          <li><a href="goldy.live_console.html#module-GoldyBot.goldy.live_console.app">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.channels.delete_channel
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.channels.html#module-GoldyBot.goldy.nextcore_utils.channels.delete_channel">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    GoldyBot.goldy.nextcore_utils.colours
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.html#module-GoldyBot.goldy.nextcore_utils.colours">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.embeds.embed
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.embeds.html#module-GoldyBot.goldy.nextcore_utils.embeds.embed">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.front_end_errors
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.html#module-GoldyBot.goldy.nextcore_utils.front_end_errors">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.guilds.get_channels
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.guilds.html#module-GoldyBot.goldy.nextcore_utils.guilds.get_channels">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.messages.delete_msg
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.messages.html#module-GoldyBot.goldy.nextcore_utils.messages.delete_msg">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.messages.send_msg
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.messages.html#module-GoldyBot.goldy.nextcore_utils.messages.send_msg">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.slash_options.auto_complete
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.slash_options.html#module-GoldyBot.goldy.nextcore_utils.slash_options.auto_complete">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.nextcore_utils.slash_options.slash_option
+
+        <ul>
+          <li><a href="goldy.nextcore_utils.slash_options.html#module-GoldyBot.goldy.nextcore_utils.slash_options.slash_option">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.objects.channel
+
+        <ul>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.channel">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.objects.invokable
+
+        <ul>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.invokable">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.objects.member
+
+        <ul>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.member">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.objects.message
+
+        <ul>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.message">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.objects.platter.golden_platter
+
+        <ul>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.platter.golden_platter">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.presence
+
+        <ul>
+          <li><a href="goldy.html#module-GoldyBot.goldy.presence">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.recipes
+
+        <ul>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.recipes.button
+
+        <ul>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes.button">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.recipes.select_menu
+
+        <ul>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes.select_menu">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.goldy.token
+
+        <ul>
+          <li><a href="goldy.html#module-GoldyBot.goldy.token">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.info
+
+        <ul>
+          <li><a href="api_documentation.html#module-GoldyBot.info">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.logging
+
+        <ul>
+          <li><a href="api_documentation.html#module-GoldyBot.logging">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.paths
+
+        <ul>
+          <li><a href="api_documentation.html#module-GoldyBot.paths">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.utils._async
+
+        <ul>
+          <li><a href="utils.html#module-GoldyBot.utils._async">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.utils._lambda
+
+        <ul>
+          <li><a href="utils.html#module-GoldyBot.utils._lambda">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.utils.cache
+
+        <ul>
+          <li><a href="utils.html#module-GoldyBot.utils.cache">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.utils.human_datetime
+
+        <ul>
+          <li><a href="utils.html#module-GoldyBot.utils.human_datetime">module</a>
+</li>
+        </ul></li>
+        <li>
+    GoldyBot.utils.strings
+
+        <ul>
+          <li><a href="utils.html#module-GoldyBot.utils.strings">module</a>
+</li>
+        </ul></li>
+        <li><a href="api_documentation.html#GoldyBot.errors.GoldyBotError">GoldyBotError</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig">GoldyConfig (class in GoldyBot.goldy.goldy_config)</a>
+</li>
+        <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB">GoldyDB (class in GoldyBot.goldy.database.databases)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.GREEN">GREEN (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.GREEN">(GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.GREY">GREY (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.GREY">(GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.group_command.GroupCommand">GroupCommand (class in GoldyBot.goldy.commands.group_command)</a>
+</li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild">Guild (class in GoldyBot.goldy.guilds.guild)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.guild">guild (GoldyBot.goldy.objects.channel.Channel attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.guild">(GoldyBot.goldy.objects.message.Message attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.GuildManager">GuildManager (class in GoldyBot.goldy.guilds)</a>
+</li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.GuildNotFound">GuildNotFound</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="H" class="genindex-section">
+  <h2>H</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.hidden">hidden (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.http_client">http_client (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils.human_datetime.HumanDatetimeOptions">HumanDatetimeOptions (class in GoldyBot.utils.human_datetime)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild.id">id (GoldyBot.goldy.guilds.guild.Guild attribute)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.id">(GoldyBot.goldy.objects.channel.Channel attribute)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable.id">(GoldyBot.goldy.objects.invokable.Invokable property)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.id">(GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message.id">(GoldyBot.goldy.objects.message.Message attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status.IDLE">IDLE (GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.ignored_extensions">ignored_extensions (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.included_extensions">included_extensions (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.insert">insert() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.insert">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.INTERNAL_EXTENSIONS">INTERNAL_EXTENSIONS (GoldyBot.paths.Paths attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.InvalidArguments">InvalidArguments</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.errors.InvalidParameter">InvalidParameter</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.errors.InvalidTypeInMethod">InvalidTypeInMethod</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.INVISIBLE">INVISIBLE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+
+        <ul>
+          <li><a href="goldy.html#GoldyBot.goldy.presence.Status.INVISIBLE">(GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable">Invokable (class in GoldyBot.goldy.objects.invokable)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.invokables">invokables (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.invoke">invoke() (GoldyBot.goldy.commands.command.Command method)</a>
+
+        <ul>
+          <li><a href="goldy.commands.html#GoldyBot.goldy.commands.prefix_command.PrefixCommand.invoke">(GoldyBot.goldy.commands.prefix_command.PrefixCommand method)</a>
+</li>
+          <li><a href="goldy.commands.html#GoldyBot.goldy.commands.slash_command.SlashCommand.invoke">(GoldyBot.goldy.commands.slash_command.SlashCommand method)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable.invoke">(GoldyBot.goldy.objects.invokable.Invokable method)</a>
+</li>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.Button.invoke">(GoldyBot.goldy.recipes.button.Button method)</a>
+</li>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.Recipe.invoke">(GoldyBot.goldy.recipes.Recipe method)</a>
+</li>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenu.invoke">(GoldyBot.goldy.recipes.select_menu.SelectMenu method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.slash_command.SlashCommand.invoke_auto_complete">invoke_auto_complete() (GoldyBot.goldy.commands.slash_command.SlashCommand method)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.is_child">is_child (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.is_disabled">is_disabled (GoldyBot.goldy.commands.command.Command property)</a>
+
+        <ul>
+          <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.is_disabled">(GoldyBot.goldy.extensions.Extension property)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.guild.Guild.is_extension_allowed">is_extension_allowed() (GoldyBot.goldy.guilds.guild.Guild method)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils._lambda.is_lambda">is_lambda() (in module GoldyBot.utils._lambda)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.is_loaded">is_loaded (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.slash_command.SlashCommand.is_parent">is_parent (GoldyBot.goldy.commands.slash_command.SlashCommand property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.late_load_extensions">late_load_extensions (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.latency">latency (GoldyBot.goldy.Goldy property)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.LIME_GREEN">LIME_GREEN (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="utils.html#GoldyBot.utils.strings.line_fix">line_fix() (in module GoldyBot.utils.strings)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.LINK">LINK (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.list_collection_names">list_collection_names() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.list_collection_names">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.ActivityTypes.LISTENING_TO">LISTENING_TO (GoldyBot.goldy.presence.ActivityTypes attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.live_console">live_console (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.ActivityTypes.LIVE_ON_TWITCH">LIVE_ON_TWITCH (GoldyBot.goldy.presence.ActivityTypes attribute)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.LiveConsole">LiveConsole (class in GoldyBot.goldy.live_console)</a>
+</li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.app.LiveConsoleApp">LiveConsoleApp (class in GoldyBot.goldy.live_console.app)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.loader.CommandLoader.load">load() (GoldyBot.goldy.commands.loader.CommandLoader method)</a>
+
+        <ul>
+          <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.load">(GoldyBot.goldy.extensions.extension_loader.ExtensionLoader method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.loaded_path">loaded_path (GoldyBot.goldy.extensions.Extension property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.group_command.GroupCommand.master_command">master_command() (GoldyBot.goldy.commands.group_command.GroupCommand method)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member">Member (class in GoldyBot.goldy.objects.member)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.member_data">member_data (GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.DatabaseEnums.MEMBER_GLOBAL_DATA">MEMBER_GLOBAL_DATA (GoldyBot.goldy.database.DatabaseEnums attribute)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.DatabaseEnums.MEMBER_GUILD_DATA">MEMBER_GUILD_DATA (GoldyBot.goldy.database.DatabaseEnums attribute)</a>
+</li>
+        <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.member.MemberDBWrapper">MemberDBWrapper (class in GoldyBot.goldy.database.wrappers.member)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.mention">mention (GoldyBot.goldy.objects.channel.Channel attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes.MENTIONABLE">MENTIONABLE (GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.MENTIONABLE">(GoldyBot.goldy.recipes.select_menu.SelectMenuTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.message.Message">Message (class in GoldyBot.goldy.objects.message)</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.metadata">metadata (GoldyBot.goldy.extensions.Extension property)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.MissingArgument">MissingArgument</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.MissingPerms">MissingPerms</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="cli.html#module-GoldyBot.cli">GoldyBot.cli</a>
+</li>
+          <li><a href="api_documentation.html#module-GoldyBot.config">GoldyBot.config</a>
+</li>
+          <li><a href="api_documentation.html#module-GoldyBot.errors">GoldyBot.errors</a>
+</li>
+          <li><a href="goldy.html#module-GoldyBot.goldy">GoldyBot.goldy</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.command">GoldyBot.goldy.commands.command</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.decorator">GoldyBot.goldy.commands.decorator</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.group_command">GoldyBot.goldy.commands.group_command</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.listener">GoldyBot.goldy.commands.listener</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.loader">GoldyBot.goldy.commands.loader</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.prefix_command">GoldyBot.goldy.commands.prefix_command</a>
+</li>
+          <li><a href="goldy.commands.html#module-GoldyBot.goldy.commands.slash_command">GoldyBot.goldy.commands.slash_command</a>
+</li>
+          <li><a href="goldy.database.html#module-GoldyBot.goldy.database">GoldyBot.goldy.database</a>
+</li>
+          <li><a href="goldy.database.databases.html#module-GoldyBot.goldy.database.databases">GoldyBot.goldy.database.databases</a>
+</li>
+          <li><a href="goldy.database.wrappers.html#module-GoldyBot.goldy.database.wrappers">GoldyBot.goldy.database.wrappers</a>
+</li>
+          <li><a href="goldy.database.wrappers.html#module-GoldyBot.goldy.database.wrappers.member">GoldyBot.goldy.database.wrappers.member</a>
+</li>
+          <li><a href="goldy.extensions.html#module-GoldyBot.goldy.extensions">GoldyBot.goldy.extensions</a>
+</li>
+          <li><a href="goldy.extensions.html#module-GoldyBot.goldy.extensions.extension_loader">GoldyBot.goldy.extensions.extension_loader</a>
+</li>
+          <li><a href="goldy.html#module-GoldyBot.goldy.goldy_config">GoldyBot.goldy.goldy_config</a>
+</li>
+          <li><a href="goldy.guilds.html#module-GoldyBot.goldy.guilds">GoldyBot.goldy.guilds</a>
+</li>
+          <li><a href="goldy.guilds.html#module-GoldyBot.goldy.guilds.guild">GoldyBot.goldy.guilds.guild</a>
+</li>
+          <li><a href="goldy.live_console.html#module-GoldyBot.goldy.live_console">GoldyBot.goldy.live_console</a>
+</li>
+          <li><a href="goldy.live_console.html#module-GoldyBot.goldy.live_console.app">GoldyBot.goldy.live_console.app</a>
+</li>
+          <li><a href="goldy.nextcore_utils.channels.html#module-GoldyBot.goldy.nextcore_utils.channels.delete_channel">GoldyBot.goldy.nextcore_utils.channels.delete_channel</a>
+</li>
+          <li><a href="goldy.nextcore_utils.html#module-GoldyBot.goldy.nextcore_utils.colours">GoldyBot.goldy.nextcore_utils.colours</a>
+</li>
+          <li><a href="goldy.nextcore_utils.embeds.html#module-GoldyBot.goldy.nextcore_utils.embeds.embed">GoldyBot.goldy.nextcore_utils.embeds.embed</a>
+</li>
+          <li><a href="goldy.nextcore_utils.html#module-GoldyBot.goldy.nextcore_utils.front_end_errors">GoldyBot.goldy.nextcore_utils.front_end_errors</a>
+</li>
+          <li><a href="goldy.nextcore_utils.guilds.html#module-GoldyBot.goldy.nextcore_utils.guilds.get_channels">GoldyBot.goldy.nextcore_utils.guilds.get_channels</a>
+</li>
+          <li><a href="goldy.nextcore_utils.messages.html#module-GoldyBot.goldy.nextcore_utils.messages.delete_msg">GoldyBot.goldy.nextcore_utils.messages.delete_msg</a>
+</li>
+          <li><a href="goldy.nextcore_utils.messages.html#module-GoldyBot.goldy.nextcore_utils.messages.send_msg">GoldyBot.goldy.nextcore_utils.messages.send_msg</a>
+</li>
+          <li><a href="goldy.nextcore_utils.slash_options.html#module-GoldyBot.goldy.nextcore_utils.slash_options.auto_complete">GoldyBot.goldy.nextcore_utils.slash_options.auto_complete</a>
+</li>
+          <li><a href="goldy.nextcore_utils.slash_options.html#module-GoldyBot.goldy.nextcore_utils.slash_options.slash_option">GoldyBot.goldy.nextcore_utils.slash_options.slash_option</a>
+</li>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.channel">GoldyBot.goldy.objects.channel</a>
+</li>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.invokable">GoldyBot.goldy.objects.invokable</a>
+</li>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.member">GoldyBot.goldy.objects.member</a>
+</li>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.message">GoldyBot.goldy.objects.message</a>
+</li>
+          <li><a href="goldy.objects.html#module-GoldyBot.goldy.objects.platter.golden_platter">GoldyBot.goldy.objects.platter.golden_platter</a>
+</li>
+          <li><a href="goldy.html#module-GoldyBot.goldy.presence">GoldyBot.goldy.presence</a>
+</li>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes">GoldyBot.goldy.recipes</a>
+</li>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes.button">GoldyBot.goldy.recipes.button</a>
+</li>
+          <li><a href="goldy.recipes.html#module-GoldyBot.goldy.recipes.select_menu">GoldyBot.goldy.recipes.select_menu</a>
+</li>
+          <li><a href="goldy.html#module-GoldyBot.goldy.token">GoldyBot.goldy.token</a>
+</li>
+          <li><a href="api_documentation.html#module-GoldyBot.info">GoldyBot.info</a>
+</li>
+          <li><a href="api_documentation.html#module-GoldyBot.logging">GoldyBot.logging</a>
+</li>
+          <li><a href="api_documentation.html#module-GoldyBot.paths">GoldyBot.paths</a>
+</li>
+          <li><a href="utils.html#module-GoldyBot.utils._async">GoldyBot.utils._async</a>
+</li>
+          <li><a href="utils.html#module-GoldyBot.utils._lambda">GoldyBot.utils._lambda</a>
+</li>
+          <li><a href="utils.html#module-GoldyBot.utils.cache">GoldyBot.utils.cache</a>
+</li>
+          <li><a href="utils.html#module-GoldyBot.utils.human_datetime">GoldyBot.utils.human_datetime</a>
+</li>
+          <li><a href="utils.html#module-GoldyBot.utils.strings">GoldyBot.utils.strings</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.name">name (GoldyBot.goldy.commands.command.Command property)</a>
+
+        <ul>
+          <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.name">(GoldyBot.goldy.extensions.Extension property)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable.name">(GoldyBot.goldy.objects.invokable.Invokable property)</a>
+</li>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.name">(GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+          <li><a href="goldy.html#GoldyBot.goldy.presence.Activity.name">(GoldyBot.goldy.presence.Activity attribute)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.token.NoDatabaseToken">NoDatabaseToken</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.NoDiscordToken">NoDiscordToken</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.errors.NotSupportedYetForSlash">NotSupportedYetForSlash</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="O" class="genindex-section">
+  <h2>O</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.listener.CommandListener.on_interaction">on_interaction() (GoldyBot.goldy.commands.listener.CommandListener method)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.listener.CommandListener.on_prefix_cmd">on_prefix_cmd() (GoldyBot.goldy.commands.listener.CommandListener method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status.ONLINE">ONLINE (GoldyBot.goldy.presence.Status attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.OnlyAuthorCanInvokeRecipe">OnlyAuthorCanInvokeRecipe</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.params">params (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.params_to_options">params_to_options() (GoldyBot.goldy.commands.command.Command method)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.parent_command">parent_command (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths">Paths (class in GoldyBot.paths)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.permission_system">permission_system (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.phrase_pyproject">phrase_pyproject() (GoldyBot.goldy.extensions.extension_loader.ExtensionLoader method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.ActivityTypes.PLAYING_GAME">PLAYING_GAME (GoldyBot.goldy.presence.ActivityTypes attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.pre_setup">pre_setup() (GoldyBot.goldy.Goldy method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.prefix_command.PrefixCommand">PrefixCommand (class in GoldyBot.goldy.commands.prefix_command)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Presence">Presence (class in GoldyBot.goldy.presence)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.presence">presence (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.PRIMARY">PRIMARY (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.pull">pull() (GoldyBot.goldy.extensions.extension_loader.ExtensionLoader method)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.PURPLE">PURPLE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+        <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.DatabaseWrapper.push">push() (GoldyBot.goldy.database.wrappers.DatabaseWrapper method)</a>
+
+        <ul>
+          <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.member.MemberDBWrapper.push">(GoldyBot.goldy.database.wrappers.member.MemberDBWrapper method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.goldy_config.GoldyConfig.raise_on_extension_loader_error">raise_on_extension_loader_error (GoldyBot.goldy.goldy_config.GoldyConfig property)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.Recipe">Recipe (class in GoldyBot.goldy.recipes)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.RED">RED (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.RED">(GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable.register">register() (GoldyBot.goldy.objects.invokable.Invokable method)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.register_sub_command">register_sub_command() (GoldyBot.goldy.commands.command.Command method)</a>
+
+        <ul>
+          <li><a href="goldy.commands.html#GoldyBot.goldy.commands.prefix_command.PrefixCommand.register_sub_command">(GoldyBot.goldy.commands.prefix_command.PrefixCommand method)</a>
+</li>
+          <li><a href="goldy.commands.html#GoldyBot.goldy.commands.slash_command.SlashCommand.register_sub_command">(GoldyBot.goldy.commands.slash_command.SlashCommand method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.extension_loader.ExtensionLoader.reload">reload() (GoldyBot.goldy.extensions.extension_loader.ExtensionLoader method)</a>
+</li>
+        <li><a href="goldy.database.html#GoldyBot.goldy.database.Database.remove">remove() (GoldyBot.goldy.database.Database method)</a>
+
+        <ul>
+          <li><a href="goldy.database.databases.html#GoldyBot.goldy.database.databases.GoldyDB.remove">(GoldyBot.goldy.database.databases.GoldyDB method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.required_perms">required_perms (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes.ROLE">ROLE (GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.ROLE">(GoldyBot.goldy.recipes.select_menu.SelectMenuTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.LiveConsole.run">run() (GoldyBot.goldy.live_console.LiveConsole method)</a>
+</li>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.RUN_SCRIPT_TEMPLATE">RUN_SCRIPT_TEMPLATE (GoldyBot.paths.Paths attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.SECONDARY">SECONDARY (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenu">SelectMenu (class in GoldyBot.goldy.recipes.select_menu)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuChoice">SelectMenuChoice (class in GoldyBot.goldy.recipes.select_menu)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes">SelectMenuTypes (class in GoldyBot.goldy.recipes.select_menu)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.auto_complete.SlashOptionAutoComplete.send_auto_complete">send_auto_complete() (GoldyBot.goldy.nextcore_utils.slash_options.auto_complete.SlashOptionAutoComplete method)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.channel.Channel.send_message">send_message() (GoldyBot.goldy.objects.channel.Channel method)</a>
+
+        <ul>
+          <li><a href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter.send_message">(GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.nextcore_utils.messages.html#GoldyBot.goldy.nextcore_utils.messages.send_msg.send_msg">send_msg() (in module GoldyBot.goldy.nextcore_utils.messages.send_msg)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.embeds.html#GoldyBot.goldy.nextcore_utils.embeds.embed.Embed.set_random_footer">set_random_footer() (GoldyBot.goldy.nextcore_utils.embeds.embed.Embed method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.setup">setup() (GoldyBot.goldy.Goldy method)</a>
+
+        <ul>
+          <li><a href="goldy.guilds.html#GoldyBot.goldy.guilds.GuildManager.setup">(GoldyBot.goldy.guilds.GuildManager method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.shard_manager">shard_manager (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.command.Command.slash_options">slash_options (GoldyBot.goldy.commands.command.Command property)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.slash_command.SlashCommand">SlashCommand (class in GoldyBot.goldy.commands.slash_command)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOption">SlashOption (class in GoldyBot.goldy.nextcore_utils.slash_options.slash_option)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.auto_complete.SlashOptionAutoComplete">SlashOptionAutoComplete (class in GoldyBot.goldy.nextcore_utils.slash_options.auto_complete)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionChoice">SlashOptionChoice (class in GoldyBot.goldy.nextcore_utils.slash_options.slash_option)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes">SlashOptionTypes (class in GoldyBot.goldy.nextcore_utils.slash_options.slash_option)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.start">start() (GoldyBot.goldy.Goldy method)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.listener.CommandListener.start_listening">start_listening() (GoldyBot.goldy.commands.listener.CommandListener method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.start_up_time">start_up_time (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Status">Status (class in GoldyBot.goldy.presence)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.stop">stop() (GoldyBot.goldy.Goldy method)</a>
+
+        <ul>
+          <li><a href="goldy.live_console.html#GoldyBot.goldy.live_console.LiveConsole.stop">(GoldyBot.goldy.live_console.LiveConsole method)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.stop_async">stop_async() (GoldyBot.goldy.Goldy method)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.STRING">STRING (GoldyBot.goldy.recipes.select_menu.SelectMenuTypes attribute)</a>
+</li>
+        <li><a href="goldy.commands.html#GoldyBot.goldy.commands.group_command.GroupCommand.sub_command">sub_command() (GoldyBot.goldy.commands.group_command.GroupCommand method)</a>
+</li>
+        <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.button.ButtonStyle.SUCCESS">SUCCESS (GoldyBot.goldy.recipes.button.ButtonStyle attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.system">system (GoldyBot.goldy.Goldy attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="utils.html#GoldyBot.utils.human_datetime.HumanDatetimeOptions.TIME">TIME (GoldyBot.utils.human_datetime.HumanDatetimeOptions attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.token.Token">Token (class in GoldyBot.goldy.token)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="api_documentation.html#GoldyBot.paths.Paths.TOKEN_ENV_TEMPLATE">TOKEN_ENV_TEMPLATE (GoldyBot.paths.Paths attribute)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Activity.type">type (GoldyBot.goldy.presence.Activity attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.front_end_errors.UnknownError">UnknownError</a>
+</li>
+        <li><a href="goldy.extensions.html#GoldyBot.goldy.extensions.Extension.unload">unload() (GoldyBot.goldy.extensions.Extension method)</a>
+</li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.invokable.Invokable.unregister">unregister() (GoldyBot.goldy.objects.invokable.Invokable method)</a>
+</li>
+        <li><a href="goldy.html#GoldyBot.goldy.Goldy.up_time">up_time (GoldyBot.goldy.Goldy property)</a>
+</li>
+        <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.DatabaseWrapper.update">update() (GoldyBot.goldy.database.wrappers.DatabaseWrapper method)</a>
+
+        <ul>
+          <li><a href="goldy.database.wrappers.html#GoldyBot.goldy.database.wrappers.member.MemberDBWrapper.update">(GoldyBot.goldy.database.wrappers.member.MemberDBWrapper method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.Activity.url">url (GoldyBot.goldy.presence.Activity attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.slash_options.html#GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes.USER">USER (GoldyBot.goldy.nextcore_utils.slash_options.slash_option.SlashOptionTypes attribute)</a>
+
+        <ul>
+          <li><a href="goldy.recipes.html#GoldyBot.goldy.recipes.select_menu.SelectMenuTypes.USER">(GoldyBot.goldy.recipes.select_menu.SelectMenuTypes attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.member.Member.username">username (GoldyBot.goldy.objects.member.Member property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="V" class="genindex-section">
+  <h2>V</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="api_documentation.html#GoldyBot.info.VER">VER (in module GoldyBot.info)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="api_documentation.html#GoldyBot.info.VERSION">VERSION (in module GoldyBot.info)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="W" class="genindex-section">
+  <h2>W</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.objects.html#GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter.wait">wait() (GoldyBot.goldy.objects.platter.golden_platter.GoldPlatter method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.html#GoldyBot.goldy.presence.ActivityTypes.WATCHING">WATCHING (GoldyBot.goldy.presence.ActivityTypes attribute)</a>
+</li>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.WHITE">WHITE (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Y" class="genindex-section">
+  <h2>Y</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="goldy.nextcore_utils.html#GoldyBot.goldy.nextcore_utils.colours.Colours.YELLOW">YELLOW (GoldyBot.goldy.nextcore_utils.colours.Colours attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Goldy
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    </body>
+</html>
